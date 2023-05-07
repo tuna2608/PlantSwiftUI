@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeScreen1View: View {
+struct HomeScreenView: View {
     var body: some View {
         ZStack{
             Color("bg_color").ignoresSafeArea()
@@ -25,9 +25,9 @@ struct HomeScreen1View: View {
     }
 }
 
-struct HomeScreen1View_Previews: PreviewProvider {
+struct HomeScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen1View()
+        HomeScreenView()
     }
 }
 

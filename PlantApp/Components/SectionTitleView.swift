@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct SectionTitleView: View {
+    var title: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Text(title)
+                .font(.system(size: 18))
+                .fontWeight(.medium)
+                .foregroundColor(Color("Primary"))
+            Spacer()
+            Text("See all")
+                .fontWeight(.medium)
+                .foregroundColor(Color.black.opacity(0.25))
+        }
     }
 }
 
-struct SectionTitleView_Previews: PreviewProvider {
-    static var previews: some View {
-        SectionTitleView()
-    }
-}
+//struct SectionTitleView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SectionTitleView()
+//    }
+//}

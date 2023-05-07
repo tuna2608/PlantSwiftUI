@@ -9,9 +9,26 @@ import SwiftUI
 
 struct HeaderView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            VStack(alignment: .leading){
+                Text("Exclusive Plants")
+                    .fontWeight(.semibold)
+                    .font(.title)
+                Text("For your hobby")
+                    .fontWeight(.light)
+                    .font(.title)
+            }
+            .foregroundColor(Color("Primary"))
+            
+            Spacer()
+            Image("avt")
+                .resizable()
+                .frame(width: 70,height: 70)
+                .cornerRadius(20)
+        }
     }
 }
+
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
